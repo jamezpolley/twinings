@@ -1,0 +1,54 @@
+a
+{
+	font: 10pt sans-serif;
+	text-decoration: none;
+}
+
+body
+{
+	background-color: #111;
+	border-top: 8pt solid #ff7;
+	margin: 0;
+	padding: 0 12pt;
+}
+
+p
+{
+	margin: 4pt 0;
+}
+
+#heading
+{
+	border-bottom: 2px solid #ffa;
+	color: #ffc;
+	font-family: sans-serif;
+	font-size: 16pt;
+	padding-left: 16pt;
+}
+
+.tea-bag
+{
+	background-color: #222;
+	border: thin solid #000;
+	border-bottom: 2px solid #ffa;
+	color: #555;
+	float: left;
+	height: 80px;
+	margin: 4pt;
+	padding-top: 12px;
+	text-align: center;
+	width: 96px;
+}
+
+.tea-cup
+{
+	clear: left;
+	padding-top: 14pt;
+}
+
+.tea-cup > p
+{
+	color: #fff;
+	font: 14pt sans-serif;
+	padding-left: 4pt;
+}

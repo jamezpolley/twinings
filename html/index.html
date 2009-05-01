@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>Twinings</title>
+		<script type="text/javascript" src="prototype.js"></script>
+		<script type="text/javascript" src="scriptaculous.js?load=effects,builder"></script>
+		<script type="text/javascript" src="lightbox.js"></script>
+		<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+	</head>
+	<body>
+		<div id="heading">
+			<h1>Twinings</h1>
+		</div>
+
+	#for $date, $image_list in $sorted( $image_dict.items() ):
+		<div class="tea-cup">
+			<p>$date</p>
+
+		#for $image in $sorted( $image_list ):
+			<a href="/$image.path" rel="lightbox[$date]" title="$image.time">
+				<div class="tea-bag">
+					<img src="/$image.thumb" />
+					<p>$image.time</p>
+				</div>
+			</a>
+		#end for
+
+		</div>
+	#end for
+
+	</body>
+</html>
