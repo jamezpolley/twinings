@@ -1,0 +1,4 @@
+Cheetah==2.4.4
+Markdown==2.1.1
+web.py==0.36
+wsgiref==0.1.2

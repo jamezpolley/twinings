@@ -61,4 +61,5 @@ class data_server:
 		print open( full, 'rb' ).read()
 
 if __name__ == '__main__':
-	web.run( urls, globals() )
+    app = web.application(urls, globals())
+    app.run()
